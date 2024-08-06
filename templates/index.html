@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>RiskAI</title>
+</head>
+<body>
+    <nav id="sidebar">
+        <div class="float-top">
+            <div class="sidebar-controls">
+                <button class="new-chat"><i class="fa fa-plus"></i> New chat</button>
+                <button class="hide-sidebar"><i class="fa fa-chevron-left"></i></button>
+            </div>
+        </div>
+        <div class="user-menu">
+            <button>
+                <i class="user-icon">A</i>
+                Amaan
+                <i class="fa fa-ellipsis dots"></i>
+            </button>
+            <ul>
+                <li><button>My plan</button></li>
+                <li><button>Custom instructions</button></li>
+                <li><button>Settings &amp; Beta</button></li>
+                <li><button>Log out</button></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="view new-chat-view">
+            <div class="logo" id="logo">
+                RiskAI
+            </div>
+        </div>
+
+        <div class="view conversation-view">
+            <div class="centered-content" id="centered-content">
+                <img src="../static/image.png" alt="Logo" class="logo-image">
+                <p class="description-text">Type in a brief description of your change initiative to analyze its risks</p>
+            </div>
+            <div id="chat-area" class="chat-area"></div>
+        </div>
+
+        <div id="message-form">
+            <form id="chat-form">
+                <div class="message-wrapper">
+                    <textarea id="message" name="description" rows="1" placeholder="Send a message"></textarea>
+                    <button type="submit" class="send-button"><i class="fa fa-paper-plane"></i></button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="../static/script.js"></script>
+</body>
+</html>
